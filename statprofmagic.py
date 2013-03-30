@@ -44,6 +44,10 @@ class StatprofMagics(Magics):
         if not self.enabled:
             raise TryNext
 
+        if statprof.is_active(): # play it safe
+            statprof.state.reset()
+        statprof.reset()
+
         self.has_started = True
         statprof.start()
         raise TryNext
@@ -59,6 +63,8 @@ class StatprofMagics(Magics):
         self.has_started = False
         statprof.display()
         statprof.stop()
+        if statprof.is_active(): # play it safe
+            statprof.state.reset()
         statprof.reset()
 
 def load_ipython_extension(ip):
