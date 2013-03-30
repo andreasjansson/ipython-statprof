@@ -17,6 +17,8 @@ Installation
 Now, IPython will tell you that you can use the extension right away by `%load_ext statprofmagic`. 
 That probably won't work, instead just restart IPython.
 
+The extension has been tested on IPython 0.13 / Python 2.7.
+
 Usage
 -----
 
@@ -37,6 +39,8 @@ To enable statprof for a single line only:
 
 Sample output
 -------------
+
+    In [83]: %load_ext statprofmagic
 
     In [84]: %statprof
     Statprof enabled
@@ -74,3 +78,6 @@ Sample output
     ---
     Sample count: 79
     Total time: 0.510000 seconds
+
+    In [86]: %statprof
+    Statprof disabled
