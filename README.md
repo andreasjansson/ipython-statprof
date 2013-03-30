@@ -38,6 +38,9 @@ To enable statprof for a single line only:
 Sample output
 -------------
 
+    In [84]: %statprof
+    Statprof enabled
+
     In [85]: import pickle, random, string; pickle.dumps([random.choice(string.ascii_letters) for _ in range(100000)]);
       %   cumulative      self          
      time    seconds   seconds  name    
