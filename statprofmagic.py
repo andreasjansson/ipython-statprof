@@ -33,7 +33,7 @@ class StatprofMagics(Magics):
             self.once = True
             self.print_state()
         else:
-            print 'Unknown parameter_s: ' + parameter
+            print 'Unknown parameter: ' + parameter_s
 
     def print_state(self):
         print 'Statprof %s%s' % (
