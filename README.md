@@ -1,7 +1,7 @@
 IPython-statprof
 ================
 
-_[Statprof](https://github.com/bos/statprof.py) magic for statistical profiling within IPython_
+_[Statprof](https://github.com/bos/statprof.py) magic for statistical profiling inside IPython_
 
 Installation
 ------------
