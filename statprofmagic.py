@@ -1,6 +1,6 @@
 from IPython.core.magic import Magics, magics_class, line_magic
 from IPython.core.hooks import TryNext
-import statprof as statprof
+import statprof
 
 @magics_class
 class StatprofMagics(Magics):
