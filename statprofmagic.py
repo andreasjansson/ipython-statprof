@@ -10,6 +10,7 @@ class StatprofMagics(Magics):
         self.enabled = False
         self.once = False
         self.has_started = False
+        self.is_active = False
 
     @line_magic
     def statprof(self, parameter_s=''):
