@@ -10,7 +10,6 @@ class StatprofMagics(Magics):
         self.enabled = False
         self.once = False
         self.has_started = False
-        self.is_active = False
 
     @line_magic
     def statprof(self, parameter_s=''):
@@ -62,8 +61,8 @@ class StatprofMagics(Magics):
             self.once = False
             
         self.has_started = False
-        statprof.display()
         statprof.stop()
+        statprof.display()
         if statprof.is_active(): # play it safe
             statprof.state.reset()
         statprof.reset()
